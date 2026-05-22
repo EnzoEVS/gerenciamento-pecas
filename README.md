@@ -4,7 +4,7 @@ Sistema de controle de peças para oficina mecânica.
 
 ## Fluxo
 
-Agora o sistema funciona em etapas:
+O sistema funciona em etapas:
 
 1. Marca
 2. Carro/modelo
@@ -24,7 +24,6 @@ Chevrolet → Astra → 2000 → 1.8
 - Adicionar versões
 - Remover itens
 - Controle de peças
-- Dados persistidos no localStorage
 
 ## Rodar localmente
 
