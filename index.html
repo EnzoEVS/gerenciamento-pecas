@@ -10,7 +10,21 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
+function partIcon(cat, name) {
+  const n = (name || '').toLowerCase();
+  // heurísticas por nome
+  if (/óleo|oleo|óleo|óleo|óleo do|óleo/.test(n)) return `<span class="part-emoji">🛢️</span>`;
+  if (/vela|igniç|igni|igniçã|igniçã|igniã|ignição|ignicao|igni/.test(n)) return `<span class="part-emoji">🔥</span>`;
+  if (/pastilha|disco|freio|freios/.test(n)) return `<span class="part-emoji">🛑</span>`;
+  if (/filtro|filtros|filtro do|filtro de/.test(n)) return `<span class="part-emoji">🧼</span>`;
+  if (/correi|correia|correiadentada|correia/.test(n)) return `<span class="part-emoji">🔗</span>`;
+  if (/amortecedor|amortecedores|suspensã|suspensao|suspensão/.test(n)) return `<span class="part-emoji">🛞</span>`;
+  // fallback por categoria
+  const CAT_EMOJI = {
+    motor: '🔧', eletrica: '⚡', freios: '🛑', ar: '❄️', transmissao: '⚙️', suspensao: '🛞', funilaria: '🧰', outro: '📦'
+  };
+  return `<span class="part-emoji">${CAT_EMOJI[cat] || CAT_EMOJI.outro}</span>`;
+}
   padding: 0;
 }
 
@@ -267,6 +281,8 @@ h1, h2, h3 { font-family: 'Syne', sans-serif; }
   justify-content: center;
   opacity: .6;
 }
+
+.part-emoji { font-size: 20px; line-height: 1; }
 
 .part-info { flex: 1; min-width: 0; }
 
@@ -902,7 +918,7 @@ function renderParts() {
     const sc  = stockClass(p);
     return `
       <div class="part-row ${sc}" data-id="${p.id}">
-        <div class="part-icon" style="color:var(--text2)">${partIcon(p.categoria)}</div>
+        <div class="part-icon" style="color:var(--text2)">${partIcon(p.categoria, p.nome)}</div>
         <div class="part-info">
           <div class="part-name">${p.nome}</div>
           <span class="part-cat ${CAT_COLORS[p.categoria] || 'cat-outro'}">${CAT_LABELS[p.categoria] || p.categoria}</span>
