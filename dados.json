@@ -1,0 +1,64 @@
+{
+  "marcas": [
+    {
+      "id": "m1",
+      "nome": "Chevrolet",
+      "modelos": [
+        {
+          "id": "mo1",
+          "nome": "Astra",
+          "anos": [
+            {
+              "id": "a1",
+              "ano": "2000",
+              "versoes": [
+                { "id": "v1", "nome": "1.8" },
+                { "id": "v2", "nome": "2.0" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mo2",
+          "nome": "Corsa",
+          "anos": [
+            {
+              "id": "a2",
+              "ano": "2010",
+              "versoes": [
+                { "id": "v3", "nome": "1.0" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "nome": "Fiat",
+      "modelos": [
+        {
+          "id": "mo3",
+          "nome": "Palio",
+          "anos": [
+            {
+              "id": "a3",
+              "ano": "2003",
+              "versoes": [
+                { "id": "v4", "nome": "1.0" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pecas": [
+    { "id": "p1", "versao_id": "v1", "categoria": "motor",    "nome": "Vela de ignição",    "quantidade": "0", "estoque_minimo": "4" },
+    { "id": "p2", "versao_id": "v1", "categoria": "motor",    "nome": "Óleo do motor",      "quantidade": "2", "estoque_minimo": "1" },
+    { "id": "p3", "versao_id": "v1", "categoria": "freios",   "nome": "Pastilha de freio",  "quantidade": "1", "estoque_minimo": "2" },
+    { "id": "p4", "versao_id": "v1", "categoria": "motor",    "nome": "Correia dentada",    "quantidade": "0", "estoque_minimo": "1" },
+    { "id": "p5", "versao_id": "v1", "categoria": "ar",       "nome": "Filtro do ar-cond.", "quantidade": "1", "estoque_minimo": "1" },
+    { "id": "p6", "versao_id": "v1", "categoria": "suspensao","nome": "Amortecedor diant.", "quantidade": "2", "estoque_minimo": "2" }
+  ]
+}

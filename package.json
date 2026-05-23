@@ -1,0 +1,12 @@
+{
+  "name": "gerenciamento-pecas",
+  "version": "1.0.0",
+  "description": "Controle de peças e persistência em dados.json para oficina mecânica.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4"
+  }
+}
