@@ -4,11 +4,9 @@ Aplicativo de controle de estoque de peças para oficina mecânica, com catálog
 
 ## Objetivo
 
-<<<<<<< HEAD
 O sistema funciona em etapas:
 =======
 Permitir que o usuário organize e mantenha o inventário de peças por veículo, usando uma estrutura de dados em árvore e gravação direta em arquivo.
->>>>>>> 22b95e9 (Alterações de melhoria)
 
 ## Como funciona
 
@@ -22,7 +20,6 @@ A aplicação apresenta um fluxo em níveis:
 
 Cada item pode ser criado ou removido no nível atual, mantendo a relação entre marca, modelo, ano e versão.
 
-<<<<<<< HEAD
 - Adicionar marcas
 - Adicionar carros
 - Adicionar anos
@@ -31,7 +28,6 @@ Cada item pode ser criado ou removido no nível atual, mantendo a relação entr
 - Controle de peças
 =======
 ## Busca
->>>>>>> 22b95e9 (Alterações de melhoria)
 
 A aplicação fornece busca rápida em dois níveis:
 
@@ -40,7 +36,6 @@ A aplicação fornece busca rápida em dois níveis:
 
 A busca é em tempo real e atualiza os resultados conforme você digita.
 
-<<<<<<< HEAD
 O ambiente sobe automaticamente na porta 5500.
 =======
 ## Funcionalidades
@@ -70,4 +65,3 @@ Quando a API local não estiver disponível, a aplicação utiliza um cache loca
 ## Uso esperado
 
 O usuário navega pelo catálogo de veículos e escolhe a versão desejada para gerenciar as peças associadas. As exclusões e alterações são gravadas em arquivo de dados.
->>>>>>> 22b95e9 (Alterações de melhoria)
